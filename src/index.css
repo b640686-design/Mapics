@@ -1,0 +1,128 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f7f6;
+  color: #17231c;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.panel {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #0000000d;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel h1 {
+  color: #16a36a;
+  font-size: 30px;
+}
+
+.panel p {
+  color: #68756d;
+  line-height: 1.6;
+}
+
+.panel label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.panel input:not([type="checkbox"]) {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #dce5df;
+  border-radius: 10px;
+  outline: none;
+}
+
+.panel input:focus {
+  border-color: #16a36a;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.panel button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #16a36a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.panel button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.thank-you {
+  text-align: center;
+  align-items: center;
+}
+
+.thank-you h2 {
+  color: #16a36a;
+}
+
+
+
+.privacy-panel {
+  max-width: 720px;
+  max-height: 85vh;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.privacy-panel h1,
+.privacy-panel h2 {
+  text-align: center;
+}
+
+.privacy-panel section {
+  margin: 28px 0;
+}
+
+.privacy-panel section h3 {
+  margin-bottom: 10px;
+}
+
+.privacy-panel section p,
+.privacy-panel li {
+  line-height: 1.7;
+}
+
+.privacy-panel ul {
+  padding-left: 24px;
+}
+
+.privacy-panel .consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 20px 0;
+}
